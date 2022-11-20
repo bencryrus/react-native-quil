@@ -74,7 +74,7 @@ export default class QuillEditor extends React.Component<
 
   constructor(props: EditorProps) {
     super(props);
-    this._webview = props.ref || React.createRef();
+    this._webview = this.props.ref || React.createRef();
     this.state = {
       webviewContent: this.getInitalHtml(),
     };
